@@ -1,0 +1,33 @@
+{
+  "name": "kalastatic-twig-filters",
+  "version": "0.1.0",
+  "description": "Twig filters for kalastatic",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalamuna/kalastatic-twig-filters.git"
+  },
+  "keywords": [
+    "kalastatic",
+    "node",
+    "prototyping"
+  ],
+  "author": "Thiago de Mello Bueno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalamuna/kalastatic-twig-filters/issues"
+  },
+  "homepage": "https://github.com/kalamuna/kalastatic-twig-filters#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "twig": "^0.9.5",
+    "underscore.string": "^3.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "rimraf": "^2.5.3"
+  }
+}
