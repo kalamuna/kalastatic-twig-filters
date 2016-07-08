@@ -56,4 +56,7 @@ Twig.extend(function(Twig){
     return input + "?" + Date.now();
   });
 
+
 });
+
+module.exports.twig = Twig.exports;
