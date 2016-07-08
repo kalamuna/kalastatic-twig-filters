@@ -1,6 +1,6 @@
 'use strict';
 
-var Twig = require("twig"),
+var Twig = Twig || require("twig"),
     _str = require("underscore.string"),
     debug = require("debug");
 
