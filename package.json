@@ -1,8 +1,8 @@
 {
   "name": "kalastatic-twig-filters",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Twig filters for kalastatic",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
