@@ -1,7 +1,6 @@
-var Twig = require('twig'),
-    twig = Twig.twig,
-    assert = require('assert'),
-    twigFilters = require('..');
+var assert = require('assert'),
+    twigFilters = require('..'),
+    twig = twigFilters.Twig.twig;
 
 describe('kalastatic-twig-filters', function(){
 
