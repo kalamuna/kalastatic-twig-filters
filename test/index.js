@@ -1,8 +1,11 @@
 var assert = require('assert'),
     twigFilters = require('..'),
-    twig = twigFilters.Twig.twig;
+    Twig = require('twig'),
+    twig = Twig.twig;
 
 describe('kalastatic-twig-filters', function(){
+  // Add the Twig Filters to Twig.
+  twigFilters(Twig);
 
   it('should slugify string', function(done){
 
