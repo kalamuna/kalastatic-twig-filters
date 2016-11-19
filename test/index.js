@@ -1,8 +1,11 @@
 var assert = require('assert'),
     twigFilters = require('..'),
-    twig = twigFilters.Twig.twig;
+    Twig = require('twig'),
+    twig = Twig.twig;
 
 describe('kalastatic-twig-filters', function(){
+  // Add the Twig Filters to Twig.
+  twigFilters(Twig);
 
   it('should slugify string', function(done){
 
@@ -37,6 +40,18 @@ describe('kalastatic-twig-filters', function(){
     });
     var output = template.render({value: "One two three four five six"});
     assert( output === "One two three four five…" );
+
+    done();
+
+  });
+
+  it('should set up the phone numbers correctly', function(done){
+
+    var template = twig({
+      data: "{{ value|phone }}"
+    });
+    var output = template.render({value: "925-255-5204"});
+    assert.equal(output, '(925) 255-5204');
 
     done();
 
