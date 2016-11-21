@@ -60,10 +60,22 @@ describe('kalastatic-twig-filters', function(){
   it('should set up the phone numbers according to the given format', function(done){
 
     var template = twig({
-      data: "{{ value|phone(NNN.NNN.NNNN) }}"
+      data: "{{ value|phone('NNN.NNN.NNNN') }}"
     });
-    var output = template.render({value: "+19252555204", format: 'NNN.NNN.NNNN'});
+    var output = template.render({value: "+19252555204"});
     assert.equal(output, '925.255.5204');
+
+    done();
+
+  });
+
+  it('should set up the phone numbers according to the default format', function(done){
+
+    var template = twig({
+      data: "{{ value|phone }}"
+    });
+    var output = template.render({value: "+19252555204"});
+    assert.equal(output, '(925) 255-5204');
 
     done();
 
