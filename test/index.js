@@ -69,18 +69,6 @@ describe('kalastatic-twig-filters', function(){
 
   });
 
-  it('should set up the phone numbers according to the default format', function(done){
-
-    var template = twig({
-      data: "{{ value|phone }}"
-    });
-    var output = template.render({value: "+19252555204"});
-    assert.equal(output, '(925) 255-5204');
-
-    done();
-
-  });
-
   it('should append a question mark and a 10 digit numeric string based on date.now() eg: "?1467994846"', function(done){
     var template = twig({
       data: "{{ value|bustcache }}"
