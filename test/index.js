@@ -74,7 +74,7 @@ describe('kalastatic-twig-filters', function(){
       data: "{{ value|bustcache }}"
     });
     var output = template.render({value: "styles.css"});
-    assert( output.length == ("styles.css"+"?1467995049377").length );
+    assert.equal(output.indexOf('?'), 10);
     done();
   });
 
