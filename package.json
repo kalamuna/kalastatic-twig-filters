@@ -1,6 +1,6 @@
 {
   "name": "kalastatic-twig-filters",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Twig filters for kalastatic",
   "main": "lib/index.js",
   "scripts": {
@@ -23,11 +23,11 @@
   "homepage": "https://github.com/kalamuna/kalastatic-twig-filters#readme",
   "dependencies": {
     "phone-formatter": "0.0.2",
-    "underscore.string": "^3.3.4"
+    "underscore.string": "^3.3.5"
   },
   "devDependencies": {
-    "twig": "^1.10.5",
-    "mocha": "^3.4.2",
-    "rimraf": "^2.6.1"
+    "twig": "^1.13.3",
+    "mocha": "^6.1.4",
+    "rimraf": "^2.6.3"
   }
 }
